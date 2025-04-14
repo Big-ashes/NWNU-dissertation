@@ -9,6 +9,18 @@ LaTeX template for master's thesis of the College of Computer Science and Engine
 
 
 
+## 部分预览
+
+![封面](figures/demo.png)
+
+
+![开头](figures/demo1.png)
+
+
+![结尾](figures/demo2.png)
+
+
+
 Coming soon
 
 
