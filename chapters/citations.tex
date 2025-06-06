@@ -1,0 +1,47 @@
+% !TeX root = ../main.tex
+
+\chapter{引用文献的标注}
+
+
+\section{引用方式}
+
+模板使用 \pkg{natbib} 宏包来设置参考文献引用的格式，默认采用顺序编码制，可以通过设置 \verb|\usepackage{natbib}| ，
+并同时启用 \verb|\bibliographystyle{bib/bigash-authoryear}| 命令，采用著者-出版年制标注法。
+
+\subsection{顺序编码制}
+
+\subsubsection{上角标引用}
+
+\ashsetup{
+  cite-style = super,
+}
+\noindent
+\begin{tabular}{l@{\quad$\Rightarrow$\quad}l}
+  \verb|\supercite{RIS-NOMA}|         & \supercite{RIS-NOMA}         \\
+  \verb|\supercite{RIS-NOMA,6G}|    & \supercite{RIS-NOMA,6G}    \\
+\end{tabular}
+
+
+\subsubsection{数字型引用}
+
+\noindent
+\begin{tabular}{l@{\quad$\Rightarrow$\quad}l}
+  \verb|\cite{RIS-NOMA}|         & \cite{RIS-NOMA}         \\
+  \verb|\citet{RIS-NOMA}|        & \citet{RIS-NOMA}        \\
+  \verb|\cite{RIS-NOMA,6G}|    & \cite{RIS-NOMA,6G}    \\
+\end{tabular}
+
+
+
+\subsection{著者-出版年制标注法}
+
+著者-出版年制标注法允许使用如 \verb|\citet| 和 \verb|\citep| 等命令进行正文中引用的控制，例如“某某（2020）”或“（某某, 2020）”的格式。
+
+
+
+\section{具体类型引用}
+
+引用英文学术期刊文章\cite{6G}, 引用中文学术期刊文章\cite{DZYX20250507002}，引用书籍\cite{cho2010mimo}, 技术报告或行业新闻报道\cite{TXCY202504210030}, 国家/行业标准或非正式出版物（如网站、手册等） \cite{SCSF00088414}......
+
+
+

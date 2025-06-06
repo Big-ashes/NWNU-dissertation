@@ -1,0 +1,55 @@
+% !TeX encoding = UTF-8
+% !TeX program = xelatex
+% !TeX spellcheck = en_US
+
+\documentclass[degree=master,degree-type=academic,output=electronic]{bigash}
+% degree      = doctor | master | bachelor
+% degree-type = academic | professional
+% language    = chinese | english
+% fontset     = windows | mac | ubuntu | fandol
+% output      = electronic | print 默认print,用于双面打印
+
+% 加载宏包、全部的配置
+\input{ashsetup}
+
+
+\begin{document}
+
+\maketitle
+\copyrightpage
+
+\frontmatter
+\input{chapters/abstract.tex}
+\tableofcontents
+\listoffigures
+\listoftables
+% \listoffiguresandtables
+
+\input{chapters/notation.tex}
+
+\mainmatter
+\input{chapters/introducation.tex}
+\input{chapters/related.tex}
+\input{chapters/research1.tex}
+\input{chapters/research2.tex}
+\input{chapters/conclusion.tex}
+
+
+% \input{chapters/math.tex}
+% \input{chapters/floats.tex}
+% \input{chapters/citations.tex}
+
+
+\bibliography{bib/NWNU}  % 参考文献使用 BibTeX 编译
+% \printbibliography       % 参考文献使用 BibLaTeX 编译
+
+\backmatter
+
+\input{chapters/acknowledgements.tex}
+
+
+\appendix
+\input{chapters/complementary.tex}
+\input{chapters/achievements.tex}
+
+\end{document}

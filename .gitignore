@@ -1,0 +1,35 @@
+# LaTeX compiled files
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.pdf
+
+# LaTeX temporary files
+*.bak
+*.sav
+*.backup
+*~
+
+# Editor-specific files
+*.swp
+*.swo
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Other common ignores
+*.dvi
+*.ps
+*.nav
+*.snm
+*.vrb
