@@ -10,7 +10,6 @@
 *.synctex.gz
 *.fls
 *.fdb_latexmk
-*.pdf
 
 # LaTeX temporary files
 *.bak
