@@ -21,7 +21,33 @@ LaTeX template for master's thesis of the College of Computer Science and Engine
 
 
 
-Coming soon
+## 模板特点
+
+
+- 模板同时支持学硕以及专硕选择，支持双面打印。
+
+
+
+## 如何使用
+
+推荐使用Windows，建议编译直接用VScode现成插件LaTex Workshop，前提需要简单的配置。
+
+以下是文件目录说明：
+
+| 文件/目录                     | 描述                             |
+|------------------------------|----------------------------------|
+| `chapters/*.tex`             | 模板论文的各个章节                 |
+| `bib/`                       | 参考文献以及格式存放            |
+| `figures/`                   | 放置图片的目录                   |
+| `NWNU-dissertation-doc.pdf`  | 模板使用说明（PDF 文档）         |
+| `main.tex`                   | 模板文件主文档                |
+| `ashsetup.tex`               | 模板的配置文件                   |
+| `chapters/*.tex`             | 示例文档的各个章节               |
+| `README.md`                  | 基本说明                         |
+| `latexmkrc`                  | latexmk 的配置文件               |
+
+建议使用前阅读``模板使用说明（PDF 文档）``
+
 
 
 
