@@ -2569,8 +2569,12 @@
     \cleardoublepage
   \fi
   \ash@chapter{\ash@list@figure@table@name}%
-  \@starttoc{lof}%
-  \@starttoc{lot}%
+  {%
+    \let\addvspace\@gobble
+    \@starttoc{lof}%
+    \@starttoc{lot}%
+  }%
+  
 }
 
 
