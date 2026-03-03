@@ -1,6 +1,6 @@
 # NWNU-dissertation
 
-本模板是西北师范大学计算机科学与工程学院研究生学位论文 LaTeX 模板，按照《[计算机科学与工程学院研究生学位论文模板(2023版)](https://jsj.nwnu.edu.cn/2454/list.ht)》的要求编写。
+本模板是西北师范大学人工智能与计算机学院（软件学院）研究生学位论文 LaTeX 模板，按照《[计算机科学与工程学院研究生学位论文模板(2023版)](https://jsj.nwnu.edu.cn/2454/list.ht)》的要求编写。
 
 
 
@@ -48,6 +48,10 @@ LaTeX template for master's thesis of the College of Computer Science and Engine
 
 建议使用前阅读``模板使用说明（PDF 文档）``
 
+
+## 更新
+
+- **2026-03-02**：修复图表目录（listoffigures / listoftables ）跨章节多余垂直间距问题
 
 
 

@@ -2546,14 +2546,22 @@
     \cleardoublepage
   \fi
   \ash@chapter{\listfigurename}%
-  \@starttoc{lof}%
+  {%
+    \let\addvspace\@gobble
+    \@starttoc{lof}%
+  }%
+ 
 }
 \renewcommand\listoftables{%
   \ifash@degree@graduate
     \cleardoublepage
   \fi
   \ash@chapter{\listtablename}%
-  \@starttoc{lot}%
+  {%
+    \let\addvspace\@gobble
+    \@starttoc{lot}%
+  }%
+ 
 }
 
 \newcommand\listoffiguresandtables{%
