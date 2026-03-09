@@ -52,6 +52,7 @@ LaTeX template for master's thesis of the College of Computer Science and Engine
 ## 更新
 
 - **2026-03-02**：修复图表目录（listoffigures / listoftables ）跨章节多余垂直间距问题
+- **2026-03-09**：新增公式编号风格调整：中文模式下改为 `(3-1)`、` (4-2)` 格式
 
 
 
