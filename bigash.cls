@@ -2524,6 +2524,7 @@
 % 图标设置章节-序号 格式
 \renewcommand{\thefigure}{\thechapter-\arabic{figure}}
 \renewcommand{\thetable}{\thechapter-\arabic{table}}
+\renewcommand{\theequation}{\thechapter-\arabic{equation}}
 
 % 研究生要求图、表的清单须另页起。
 \newlength{\ash@lof@label@width}
@@ -3262,13 +3263,8 @@
     \let\\\@empty
     \let\hspace\@gobble
   }
-  %
-  % \pkg{hyperref} 与 \pkg{unicode-math} 存在一些兼容性问题，见
-  % \href{https://github.com/ashtug/bigash/issues/223}{%
-  %   ashtug/bigash\#223}，
-  % \href{https://github.com/ho-tex/hyperref/pull/90}{ho-tex/hyperref\#90} 和
-  % \href{https://github.com/ashtug/bigash/issues/235}{%
-  %   ashtug/bigash/\#235}。
+
+
   \@ifpackagelater{hyperref}{2019/04/27}{}{%
     \g@addto@macro\psdmapshortnames{\let\mu\textmu}%
   }
