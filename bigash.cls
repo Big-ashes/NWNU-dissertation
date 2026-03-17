@@ -1995,7 +1995,7 @@
       \centering\bfseries\fontspec{Times New Roman}\fontsize{20bp}{24bp}\selectfont
       \ash@title@en\par}\par
     \vskip 3.5cm%
-    {\fontsize{20bp}{30bp}\selectfont
+    {\fontsize{14bp}{28.5bp}\selectfont
     A Thesis Submitted to\par
     Northwest Normal University\par
     in partial fulfillment of the requirement\par
@@ -2031,7 +2031,7 @@
       \ash@practice@supervisor@en@line \\
       \fi
     }%
-    \vskip 2.5cm%
+    \vskip 2.0cm%
     
     % {\fontsize{16bp}{30bp}\selectfont
     %   \begin{tabular}{@{}l@{}}%
@@ -2045,7 +2045,7 @@
     %   \end{tabular}\par}%
     \vfill
       \begin{center}
-        {\heiti\fontsize{16bp}{20bp}\selectfont \ash@date@en}
+        {\heiti\fontsize{15bp}{20bp}\selectfont \ash@date@en}
       \end{center}
   \end{titlepage}%
   \ash@reset@main@language
@@ -2101,9 +2101,10 @@
   \newgeometry{top=2.5cm, bottom=2.5cm, left=4.17cm, right=4.17cm}%
 
   \begin{titlepage}%
+    \vspace*{2cm} % 固定顶部间距
     \ash@pdfbookmark{原创性和授权使用声明}%
     \null
-    \vskip 0.3cm%
+    \vskip 0.5cm%
     {\centering\fontsize{16pt}{24pt}\selectfont\baselineskip=1.5\baselineskip
     \heiti{西北师范大学学位论文原创性声明}\par}
     \vskip 0.7cm%
@@ -2122,7 +2123,8 @@
 
 
   \begin{titlepage}%
-    \vskip 0.3cm%
+    \vspace*{2cm} % 固定顶部间距
+    \vskip 0.5cm%
     {\centering\fontsize{16pt}{24pt}\selectfont\baselineskip=1.5\baselineskip
     \heiti{西北师范大学学位论文版权使用授权书}\par}
     \vskip 0.7cm%
@@ -2132,7 +2134,7 @@
     {\selectfont\fontsize{12pt}{18pt}\selectfont\baselineskip=1.5\baselineskip
     \hspace{8cm}学位论文作者签名：\par
     \hspace{8cm}签字日期：\hfill 年\hfill 月\hfill 日\par}
-    \vskip 0.5cm%
+    % \vskip 0.5cm%
   \end{titlepage}%
 
 
