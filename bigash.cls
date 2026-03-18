@@ -1752,9 +1752,9 @@
 \newcommand\ash@supervisor@en@line{%
   \setcounter{ash@count}{\ash@clist@count{\ash@supervisor@en}}%
   \ifnum\c@ash@count>1\relax
-    Supervisors:（Associate）%
+    Supervisors: %
   \else
-    Supervisor:（Associate）%
+    Supervisor: %
   \fi
   \space\ash@clist@use{\ash@supervisor@en}{, }%
 }
@@ -2392,7 +2392,7 @@
   % {\heiti\fontsize{16pt}{24pt}\selectfont{摘\hspace{2em}要}\par}% % 黑体三号并空两个空格
 }{
   \par\null\par\noindent\hangindent=4em\relax
-  \textbf{关键词}：\ash@keywords@text\par
+  \hspace*{2em}\textbf{关键词}：\ash@keywords@text
   \ash@reset@main@language
 }
 
@@ -2422,7 +2422,7 @@
   \savebox\ash@keywords@box{\textbf{\ash@keywords@label}: }%
   \ash@keywords@width=\linewidth
   \advance\ash@keywords@width-\wd\ash@keywords@box
-  \textbf{\ash@keywords@label}: \parbox[t]{\ash@keywords@width}{\ash@keywords@en@text\par}\par
+  \hspace*{2em}\textbf{\ash@keywords@label}: {\ash@keywords@en@text\par}
   \ifash@degree@graduate
     \cleardoublepage
   \fi
