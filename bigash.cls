@@ -2576,6 +2576,7 @@
     \let\addvspace\@gobble
     \@starttoc{lof}%
     \@starttoc{lot}%
+    \cleardoublepage
   }%
   
 }
