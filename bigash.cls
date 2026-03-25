@@ -2023,8 +2023,6 @@
       \ash@supervisor@en@line \\
       \else
       Master of \ash@speciality@en \par
-      in\par
-      \ash@speciality@en \par
       by \par
       \ash@author@en \par
       \ash@supervisor@en@line \\

@@ -801,10 +801,10 @@ FUNCTION {format.title}
 { title empty$
     { "" }
     { title
-      sentence.case.title
-        'change.sentence.case
-        'skip$
-      if$
+      % sentence.case.title
+      %   'change.sentence.case
+      %   'skip$
+      % if$
       entry.numbered number empty$ not and
         { bbl.colon *
           type$ "patent" = show.patent.country and
@@ -1555,37 +1555,37 @@ FUNCTION {is.in.url}
 
 FUNCTION {format.doi}
 { ""
-  doi empty$ not
-    { "" 's :=
-      doi 't :=
-      #0 'numnames :=
-        { t empty$ not}
-        { t #1 #1 substring$ 'tmp.str :=
-          tmp.str "," = tmp.str " " = or t #2 #1 substring$ empty$ or
-            { t #2 #1 substring$ empty$
-                { s tmp.str * 's := }
-                'skip$
-              if$
-              s empty$ s is.in.url or
-                'skip$
-                { numnames #1 + 'numnames :=
-                  numnames #1 >
-                    { ", " * }
-                    { "DOI: " * }
-                  if$
-                  "\doi{" s * "}" * *
-                }
-              if$
-              "" 's :=
-            }
-            { s tmp.str * 's := }
-          if$
-          t #2 global.max$ substring$ 't :=
-        }
-      while$
-    }
-    'skip$
-  if$
+  % doi empty$ not
+  %   { "" 's :=
+  %     doi 't :=
+  %     #0 'numnames :=
+  %       { t empty$ not}
+  %       { t #1 #1 substring$ 'tmp.str :=
+  %         tmp.str "," = tmp.str " " = or t #2 #1 substring$ empty$ or
+  %           { t #2 #1 substring$ empty$
+  %               { s tmp.str * 's := }
+  %               'skip$
+  %             if$
+  %             s empty$ s is.in.url or
+  %               'skip$
+  %               { numnames #1 + 'numnames :=
+  %                 numnames #1 >
+  %                   { ", " * }
+  %                   { "DOI: " * }
+  %                 if$
+  %                 "\doi{" s * "}" * *
+  %               }
+  %             if$
+  %             "" 's :=
+  %           }
+  %           { s tmp.str * 's := }
+  %         if$
+  %         t #2 global.max$ substring$ 't :=
+  %       }
+  %     while$
+  %   }
+  %   'skip$
+  % if$
 }
 
 FUNCTION {output.doi}
